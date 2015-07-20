@@ -4,23 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace new_consoleApp
 {
-    class Program
+    class classCA2
     {
-        static void CA2(string[] args)
+        public void CA2()
         {
-            string line;
-            string path = @"C:\\Users\andy.yao\\Desktop\\CA.txt";
+            string[] line;
+            string path = @"CA.txt";
             System.IO.StreamReader file = new System.IO.StreamReader(path);
-            line = file.ReadLine().Skip(1).Take(1).First();
-            //
-            //while ((line = file.ReadLine()) != null)
-            //{
-            //    Console.WriteLine(line);
-            //}
-            Console.WriteLine(line);
+            line = file.ReadLine().Split();
+            int nSum = 0;
+            foreach (string a in line)
+            {
+                nSum += Convert.ToInt32(a);
+            }
+            Console.WriteLine(nSum);
             file.Close();
+            //return nSum;
+
         }
     }
 }
