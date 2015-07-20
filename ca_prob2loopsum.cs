@@ -13,14 +13,14 @@ namespace ConsoleApplication1
             string line;
             string path = @"C:\\Users\andy.yao\\Desktop\\CA.txt";
             System.IO.StreamReader file = new System.IO.StreamReader(path);
-            line = file.ReadLine().Skip(1).Take(1).First();
+            // line = file.ReadLine().Skip(1).Take(1).First();
             //
             //while ((line = file.ReadLine()) != null)
             //{
             //    Console.WriteLine(line);
             //}
-            Console.WriteLine(line);
-            file.Close();
+            //Console.WriteLine(line);
+            //file.Close();
         }
     }
 }
