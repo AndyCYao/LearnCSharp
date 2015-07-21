@@ -56,6 +56,7 @@ class CA_3to10{
         }
         Console.WriteLine(rst);
     }
+<<<<<<< HEAD
 
     public void RunCA6(System.IO.StreamReader CA_File)
     {
@@ -93,4 +94,6 @@ class CA_3to10{
         }
         Console.WriteLine(rst);
     }
+=======
+>>>>>>> 886a5ceae152af8d26a9567d8fcd17d428c35769
 }
