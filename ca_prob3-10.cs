@@ -56,4 +56,41 @@ class CA_3to10{
         }
         Console.WriteLine(rst);
     }
+
+    public void RunCA6(System.IO.StreamReader CA_File)
+    {
+        string line;
+        double[] nums;
+        double rnd_ans;
+        string rst = "";
+        while ((line = CA_File.ReadLine()) != null)
+        {
+            nums = Array.ConvertAll(line.Split(), double.Parse);
+            rnd_ans = Math.Round(nums[0] / nums[1]);
+            // Console.WriteLine(rnd_ans);
+            rst = rst + rnd_ans.ToString() + " ";
+        }
+        Console.WriteLine(rst);
+    }
+
+    public void RunCA7(System.IO.StreamReader CA_File)
+    {
+        int i = 1; // Counter
+        string line;
+        double[] nums;
+        double rnd_ans;
+        string rst = "";
+        while ((line = CA_File.ReadLine()) != null)
+        {
+            nums = Array.ConvertAll(line.Split(), double.Parse);
+            while(i < nums.Length){
+    
+                rnd_ans = Math.Round((nums[i] - 32) * (5.0 / 9.0));
+                // Console.WriteLine(rnd_ans);
+                rst = rst + rnd_ans.ToString() + " ";
+                i += 1;
+            }
+        }
+        Console.WriteLine(rst);
+    }
 }
