@@ -46,6 +46,7 @@ class CA_3to10{
     }
     public void RunCA5(System.IO.StreamReader CA_File)
     {
+        // Minimum of Three
         string rst = "";
         string line;
         int[] nums;
@@ -60,6 +61,7 @@ class CA_3to10{
 
     public void RunCA6(System.IO.StreamReader CA_File)
     {
+        // Rounding
         string line;
         double[] nums;
         double rnd_ans;
@@ -76,6 +78,7 @@ class CA_3to10{
 
     public void RunCA7(System.IO.StreamReader CA_File)
     {
+        // Fahrenheit to Celsius
         int i = 1; // Counter
         string line;
         double[] nums;
