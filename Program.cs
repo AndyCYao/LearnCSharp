@@ -15,7 +15,7 @@ namespace new_consoleApp
             System.IO.StreamReader file = new System.IO.StreamReader(path);
 
 
-            x.RunCA7(file);
+            x.RunCA8(file);
         }
     }
 }

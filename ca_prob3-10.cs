@@ -57,7 +57,7 @@ class CA_3to10{
         }
         Console.WriteLine(rst);
     }
-<<<<<<< HEAD
+
 
     public void RunCA6(System.IO.StreamReader CA_File)
     {
@@ -97,6 +97,20 @@ class CA_3to10{
         }
         Console.WriteLine(rst);
     }
-=======
->>>>>>> 886a5ceae152af8d26a9567d8fcd17d428c35769
+
+    public void RunCA8(System.IO.StreamReader CA_File)
+    {
+        // Arithmetic Problem
+        string line;
+        double[] nums;
+        double rnd_ans;
+        string rst = "";
+        while ((line = CA_File.ReadLine()) != null)
+        {
+            nums = Array.ConvertAll(line.Split(), double.Parse);
+            rnd_ans = 0.5 * (2 * nums[0] + nums[1] * (nums[2] - 1)) * nums[2];
+            rst = rst + rnd_ans.ToString() + " ";
+        }
+        Console.WriteLine(rst);
+    }
 }
